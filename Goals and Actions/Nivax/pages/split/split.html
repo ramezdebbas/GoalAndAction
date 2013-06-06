@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>splitPage</title>
+
+    <!-- Referencias de WinJS -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/split/split.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/pages/split/split.js"></script>
+</head>
+<body>
+    <!-- This template is used to display each item in the ListView declared below. -->
+    <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item-info">
+            <h3 class="item-title win-type-ellipsis" data-win-bind="textContent: title"></h3>
+            <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: shortDescription"></h6>
+        </div>
+    </div>
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="splitpage fragment">
+        <section class="itemlistsection" aria-label="List section">
+            <h2 class="title">Task List</h2>
+            <div class="itemlist" aria-label="List of this group's items" data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'single', tapBehavior: 'directSelect' }"></div>
+        </section>
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle"></span>
+            </h1>
+        </header>
+        <section class="articlesection" aria-atomic="true" aria-label="Item detail" aria-live="assertive">
+
+            <header class="header">
+                <div class="text">
+                    <h2 class="article-title win-type-ellipsis" data-win-bind="textContent: title"></h2>
+                    <h4 class="article-subtitle" data-win-bind="textContent: shortDescription"></h4>
+                </div>
+            </header>
+            <p>Date of the task <span data-win-bind="textContent: date"></span></p>
+            <article class="article-content" data-win-bind="innerHTML: description"></article>
+            <div id="divCambios" style="text-align: right; display: none;">
+                <label for="cbcompletado" >Completed</label><input type="checkbox" id="cbcompletado" />
+                <br />
+                <button onclick="guardarCambios();" >Save Changes</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

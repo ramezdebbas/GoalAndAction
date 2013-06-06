@@ -1,0 +1,88 @@
+﻿.addGroup .content {
+    text-align: left;
+    margin-left: 120px;
+}
+
+.addGroup .content label {
+    width: 130px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.addGroup .content input {
+    margin-top: 20px;
+    width: 400px;
+}
+
+.addGroup .content textarea {
+    margin-top: 20px;
+    width: 375px;
+    height: 150px;
+}
+
+.addGroup .content select {
+    margin-top: 20px;
+    width: 400px;
+}
+
+.addGroup .content .boton {
+    margin-top: 50px;
+    width: 200px;
+    margin-right: 120px;
+    background-color: #df3a3a;
+    border-color: #df3a3a
+}
+
+    .addGroup .content .boton:hover {
+        background-color: #ef4a4a;
+        border-color: #ef4a4a;
+    }
+    
+    
+@media screen and (-ms-view-state: snapped) {
+    
+    .addGroup .content {
+        text-align: left;
+        margin-left: 40px;
+    }
+    
+    .addGroup .content label {
+        width: 250px;
+        text-align: left;
+        margin-right: 20px;
+        display: block;
+        vertical-align: bottom;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    .addGroup .content input {
+        margin-top: 0px;
+        width: 250px;
+        margin-right: 20px;
+    }
+
+    .addGroup .content textarea {
+        margin-top: 0px;
+        width: 225px;
+        height: 150px;
+        margin-right: 20px;
+    }
+
+    .addGroup .content select {
+        margin-top: 0px;
+        width: 250px;
+        margin-right: 20px;
+    }
+
+    .addGroup .content .boton {
+        margin-top: 50px;
+        width: 200px;
+        margin-right: 20px;
+        background-color: #df3a3a;
+        border-color: #df3a3a
+    }
+
+
+}

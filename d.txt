@@ -1,0 +1,10 @@
+To live an happy life you need some goals & actions of your life. You to add the categories of your goals and actions that are to be done. You can categorize you goals, this application help you to tracking you goals. Here you can get the list of goals to do today, this month, this week, & delayed goals. 
+	
+Features:
+•	Add the categories of your goals and actions that are to be done.
+•	You can categorize you goals.
+•	Tracking you goals & actions.
+•	Add actions through the app bar.
+•	Add Goals through the app bar.
+•	Fully Different User Interface Designed keeping in focus point of view of Niche (Target) Market.
+•	Fully Unique Branding (Unique Logo Designing & Graphics Designing)

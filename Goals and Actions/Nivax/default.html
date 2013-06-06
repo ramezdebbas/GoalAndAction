@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>TaskList</title>
+
+    <!-- Referencias de WinJS -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- Referencias de TaskList -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/navigator.js"></script>
+    <script src="/AppBar.js"></script>
+    <script src="/pages/ContratoBusqueda/searchResults.js"></script>
+</head>
+<body>
+    <div id="contenthost" data-win-control="Application.PageControlNavigator" data-win-options="{home: '/pages/items/items.html'}"></div>
+    <!-- <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmd', label:'Command', icon:'placeholder'}" type="button"></button>
+    </div> -->
+
+    <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'addGroup', label:'Add Group', icon:'add',section: 'selection' }"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'addTask', label:'Add Task', icon:'add',section: 'selection' }"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'removeTask',label:'Completed Task', icon:'remove'}" ></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'showCompleted',label:'Show Completed Task', icon:'', section:'global' }" ></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'showIncompleted',label:'Show Incompleted Task', icon:'', section:'global' }" ></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'home', label:'Home', icon:'home', section: 'global'   }"></button>
+    </div> 
+     <!--
+    <div id="Div1" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'addGroup', label:'Add Group', icon:'add',section: 'selection', onclick: Application.navigateAddGroup }"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'addTask', label:'Add Task', icon:'add',section: 'selection', onclick: Application.navigateAddTask }"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'removeTask',label:'Completed Task', icon:'remove', section:'selection'}" ></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'showCompleted',label:'Show Completed Task', icon:'', section:'global', onclick: Data.completas  }" ></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'showIncompleted',label:'Show Incompleted Task', icon:'', section:'global', onclick: Data.incompletas  }" ></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'home', label:'Home', icon:'home', section: 'global' , onclick: Application.navigateHome  }"></button>
+    </div> 
+-->
+
+</body>
+</html>

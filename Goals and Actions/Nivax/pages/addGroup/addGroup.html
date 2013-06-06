@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>addGroup</title>
+
+    <!-- Referencias de WinJS -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="addGroup.css" rel="stylesheet" />
+    <script src="addGroup.js"></script>
+</head>
+<body>
+    <div class="addGroup fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">New Group</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main" class="content">
+            
+                <form class="form" onsubmit="createGroup(); return false;">
+
+                <br />
+                <label for="title">Title</label>
+                <input type="text" id="title" autofocus required />
+
+                <br />
+
+                <label for="shortDescription">Short Description</label>
+                <textarea id="shortDescription"></textarea>
+
+                <br />
+                <!--
+                <label for="shortDescription">Image</label>
+                <input type="file" id="backgroundImage" />
+
+                <br />
+                -->
+                <input type="submit" value="Create Group" class="boton" />
+            </form>
+        </section>
+    </div>
+</body>
+</html>
